@@ -22,7 +22,7 @@ Fernanda Vieira, Tecnóloga em Análise de Desenvolvimento de Sistemas pelo IFPB
 - Telegram: fernandasj
 
 ## Mentora Auxiliar: 
-Izabella Ribeiro, graduanda em Ciência da Computação pela UFCG campus Campina Grande, intregante da PyLadies PB desde 2019 e líder de extensão da comunidade de mulheres na tecnologia na UFCG. 
+Izabella Ribeiro, graduanda em Ciência da Computação pela UFCG campus Campina Grande, intregante da PyLadies PB desde 2019 e líder de extensão da comunidade de mulheres na tecnologia da UFCG. 
 
 ### Contato: 
 
