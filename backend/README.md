@@ -20,3 +20,14 @@ Fernanda Vieira, Tecnóloga em Análise de Desenvolvimento de Sistemas pelo IFPB
 - GitHub: [fernandasj](https://github.com/fernandasj)
 - Linkedln: [Fernanda Vieira](https://www.linkedin.com/in/fernanda-vieira-988b17141/)
 - Telegram: fernandasj
+
+## Mentora Auxiliar: 
+Izabella Ribeiro, graduanda em Ciência da Computação pela UFCG campus Campina Grande, intregante da PyLadies PB desde 2019 e líder de extensão da comunidade de mulheres na tecnologia na UFCG. 
+
+### Contato: 
+
+- Discord: Izabella Ribeiro#1379
+- E-mail: izabella.silva@ccc.ufcg.edu.br
+- GitHub: [IzabellaRibeiro](https://github.com/IzabellaRibeiro)
+- Linkedln: [Izabella Ribeiro](https://www.linkedin.com/in/izabella-ribeiro-b902b5188/)
+- Telegram: Izabellalrss
