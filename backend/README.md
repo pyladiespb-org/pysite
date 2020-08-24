@@ -30,4 +30,4 @@ Izabella Ribeiro, graduanda em Ciência da Computação pela UFCG campus Campina
 - E-mail: izabella.silva@ccc.ufcg.edu.br
 - GitHub: [IzabellaRibeiro](https://github.com/IzabellaRibeiro)
 - Linkedln: [Izabella Ribeiro](https://www.linkedin.com/in/izabella-ribeiro-b902b5188/)
-- Telegram: Izabellalrss
+- Telegram: Izabellarss
