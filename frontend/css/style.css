@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    height: 100vh;
+}
+body {
+    background-color: #ffffff;
+}
+
+a {
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    display: inline;
+    padding: 10px;
+}
+
+nav#menu {
+    display: block;
+    width: 100%;
+    line-height: 2.7rem;
+    margin-bottom: 2rem;
+}
+
+nav#menu ul {
+    list-style: none;
+    position: absolute;
+    left: 55%;
+    justify-content: space-around;
+}
+
+.boneca-pl-pb {
+    width: 100%;
+}
+
+.boneca-pl-pb img{
+    object-fit: cover;
+    width: 32%;
+    height: 45%;
+    margin-left: 5%;
+    margin-top: -22%;
+}
+
+.conceito h1{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 30;
+    font-size: 3rem;
+    margin-left: 38%;
+    padding-top: 25%;
+    
+}
+
+.conceito h2{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 10;
+    font-size: 1.2rem;
+    margin-left: 38%;
+}
+
+footer{
+    width: 100%;
+    height: 8rem;
+    background-color: rgba(216, 216, 197, 0.925);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p{
+    width: 100%;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 20;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.rede-social a{
+    width: 100%;
+    margin: 0.2rem;
+    color: black;
+    font-size: 3rem;
+}
+
+.rede-social ul{
+    width: 100%;
+    display: flex;
+}
+
+.rede-social a:hover{
+    opacity: .7;
+}
+
+#logo{
+    width: 2.5rem;
+    height: 2.5rem;
+    align-items: center;
+    justify-items: center;
+}
