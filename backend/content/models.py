@@ -8,3 +8,11 @@ class Sobre(models.Model):
     logo = models.ImageField()
     descricao = models.TextField()
     foto = models.ImageField()
+
+class Eventos(models.Model):
+    id_evento = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    data_inicial = models.DateField()
+    data_final = models.DateField(null=True, blank=True)
+    titulo = models.CharField(max_length=200)
+    local = models.CharField(max_length=200)
+    link = models.URLField(max_length=200, default = ' ')
