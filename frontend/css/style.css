@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
 
+@media screen and (max-width:480px) {
+    html {
+        font-size: 50%;
+    }
+}
+    
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    html {
+        font-size: 75%;
+    }
+}
+@media (min-width: 360px) {
+    body {
+      font-size: 1.0em;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +27,7 @@ header {
     height: 100vh;
 }
 body {
-    background-color: #ffffff;
+    background-color: #ffcd58;
 }
 
 a {
@@ -27,7 +44,7 @@ nav#menu {
     display: block;
     width: 100%;
     line-height: 2.7rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 nav#menu ul {
@@ -35,6 +52,7 @@ nav#menu ul {
     position: absolute;
     left: 55%;
     justify-content: space-around;
+    margin-top: 1.2rem;
 }
 
 .boneca-pl-pb {
@@ -43,10 +61,10 @@ nav#menu ul {
 
 .boneca-pl-pb img{
     object-fit: cover;
-    width: 32%;
+    width: 39%;
     height: 45%;
-    margin-left: 5%;
-    margin-top: -22%;
+    margin-left: 1.5%;
+    margin-top: -29.5%;
 }
 
 .conceito h1{
@@ -68,10 +86,11 @@ nav#menu ul {
 footer{
     width: 100%;
     height: 8rem;
-    background-color: rgba(216, 216, 197, 0.925);
+    background-color: #404041;
     display: flex;
     justify-content: left;
     align-items: center;
+    margin-top: 10%;
 }
 
 .footer-content {
@@ -102,7 +121,7 @@ footer{
 }
 
 .rede-social a:hover{
-    opacity: .7;
+    opacity: .4;
 }
 
 #logo{
