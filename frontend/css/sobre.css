@@ -1,0 +1,94 @@
+body {
+    height: 100vh;
+    text-rendering: optimizeLegibility;
+    display: block;
+}
+
+#definicao {
+    width: 100%;
+}
+.bonecas-pl {
+    width: 100%;
+    height: 100%;
+    margin-top: -25%;
+    display: block;
+    justify-items: center;
+    align-items: center;
+}
+.bonecas-pl-boneca-pl-pb {
+    width: 100%;
+}
+
+.bonecas-pl-boneca-pl-pb img{
+    object-fit: cover;
+    width: 20%;
+    height: 45%;
+    margin-left: 65%;
+}
+
+.bonecas-pl-boneca-pl-br {
+    width: 100%;
+}
+
+.boneca-pl-br {
+    width: 100%;
+    height: 100%;
+    margin-top: -12%;
+    display: block;
+}
+
+#bonequinha-pl-br{
+    object-fit: cover;
+    width: 15%;
+    height: 45%;
+    margin-left: 12%;
+    margin-top: -7.7%;
+}
+
+#bonequinha-pl-pb{
+    object-fit: cover;
+    width: 22%;
+    height: 45%;
+    margin-left: 65%;
+    margin-top: 8%
+}
+
+.conceito h1{
+    justify-content: center;
+    font-weight: bold;
+    font-size: 7vw;
+    margin-top: -10%;
+    margin-left: 34%;
+    margin-bottom: -20%;
+    width: min(50px, 70%);
+}
+
+.texto {
+    margin: 0 auto 2em auto;
+    max-width: 56.25rem;
+    font-size: 1.125rem;
+}
+.texto p{
+    font-weight: 30;
+    font-size: 1.5rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0%;
+    margin-inline-end: 0%;
+    padding: 5%;
+    margin-left: 2%;
+    line-height: 1.4;
+    font-size: clamp(1.7em, 1em + 1vw, 1.5em);
+}
+
+#boneca-pl-inicio {
+    width: 12%;
+    display: inline-block;
+    margin-bottom: -30%;
+    padding-bottom: 20%;
+}
+
+nav#menu {
+    margin-top: 1.2rem;
+}
