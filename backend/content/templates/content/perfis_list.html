@@ -1,0 +1,34 @@
+{% load static %}
+
+<head>
+    <title>Perfis - Pyladies</title>
+</head>
+
+<h1>Perfis</h1>
+
+{% for perfil in perfis %}
+    <div>
+        <h2>{{ perfil.nome }}</h2>
+
+        <p>Email: {{ perfil.email }}</p>
+        <p>Cidade: {{ perfil.cidade }}</p>
+        <p>Profissão: {{ perfil.profissao }}</p>
+
+        {% if perfil.linkedin != None %}
+            <p>LinkedIn: <a href="{{ perfil.linkedin }}">{{ perfil.linkedin }}</a></p>
+        {% endif %}
+        {% if perfil.site != None %}
+            <p>Site: <a href="{{ perfil.site }}">{{ perfil.site }}</a></p>
+        {% endif %}
+        {% if perfil.github != None %}
+            <p>Github: <a href="{{ perfil.github }}">{{ perfil.github }}</a></p>
+        {% endif %}
+        {% if perfil.facebook != None %}
+            <p>Facebook: <a href="{{ perfil.facebook }}">{{ perfil.facebook }}</a></p>
+        {% endif %}
+
+        <p>{{ perfil.biografia }}</p>
+        
+        <img src="{% static 'content/images/pyladies.jpg' %}">
+    </div>
+{% endfor %}

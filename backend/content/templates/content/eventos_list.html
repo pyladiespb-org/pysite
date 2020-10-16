@@ -1,0 +1,18 @@
+<head>
+    <title>Eventos - Pyladies</title>
+</head>
+
+<h1>Eventos</h1>
+
+{% for evento in eventos %}
+    <div>
+        <h2>{{ evento.titulo }}</h2>
+        <p>Data: {{ evento.data_inicial }}</p>
+        {% if evento.data_final != None %}
+            <p>Data final: {{ evento.data_final }}</p>
+        {% endif %}
+        <p>{{ evento.local }}</p>
+        <p><a href="{{ evento.link }}">{{ evento.link }}</a></p>
+    </div>
+{% endfor %}
+
