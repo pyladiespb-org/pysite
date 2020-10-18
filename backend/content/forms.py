@@ -1,8 +1,8 @@
 from django import forms 
-from .models import Sobre
+from .models import Perfil
   
-class SobreForm(forms.ModelForm): 
+class PerfilForm(forms.ModelForm): 
   
     class Meta: 
-        model = Sobre 
-        fields = ('id_sobre', 'logo', 'descricao', 'foto',)
+        model = Perfil 
+        fields = ('nome', 'email', 'cidade', 'profissao', 'linkedin', 'site', 'github', 'facebook', 'biografia', 'foto',)
