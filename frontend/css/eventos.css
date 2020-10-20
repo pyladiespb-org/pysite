@@ -1,0 +1,72 @@
+.bonecas-pl-boneca-pl-pb img{
+    object-fit: cover;
+    width: 20%;
+    height: 45%;
+    margin-left: 65%;
+}
+
+#bonequinha-pl-pb{
+    object-fit: cover;
+    width: 25%;
+    height: 45%;
+    margin-left: 23%;
+    margin-top: 4%
+}
+
+.conceito h1 {
+    font-size: 5rem;
+    font-weight: 500;
+    padding-top: 30%;
+    margin-left: 46%;
+}
+
+.events-container {
+    height: 100%;
+    display: grid;
+    margin-left: 40%;
+    margin-top: 7%;
+    color: #ffcd58
+}
+
+.grid {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+}
+#archive .grid a {
+   overflow: hidden;
+   padding: 0.25em;
+   text-decoration: none;
+   text-align: center;
+   border-radius: 0.5em;
+}
+
+#archive .grid a .month {
+    background-color: #b3b3b3;
+    color: white;
+    line-height: 1.5em;
+    margin: 0;
+    font-size: 0.8em;
+    min-height: 35px;
+    border-radius: 2em 2em 0 0;
+}
+ 
+#archive .grid a .day {
+    background-color: white;
+    margin: 0;
+    line-height: 1.5em;
+    font-size: 20px;
+}
+ #archive .grid a .year {
+   background-color: white;
+   line-height: 2em;
+   font-size: 12px;
+}
+
+#archive .grid a .local {
+   background-color: white;
+   border-top: 1px dashed #b3b3b3;
+   line-height: 2em;
+   border-radius: 0 0 2em 2em;
+   font-size: 16px;
+ }
