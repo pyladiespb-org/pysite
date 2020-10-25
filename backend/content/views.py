@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import Sobre
 from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
-from .models import Evento
+from .models import EventoAgendado
 from .models import Perfil
 from django.shortcuts import redirect
 from .forms import PerfilForm
@@ -15,7 +15,7 @@ def sobre_detalhe(request):
     return render(request, 'content/sobre_detalhe.html', {'sobre': sobre})
 
 def eventos_list(request):
-    eventos = Evento.objects.all().order_by('data_inicial')
+    eventos = EventoAgendado.objects.all().order_by('data_inicial')
     return render(request, 'content/eventos_list.html', {'eventos': eventos})
 
 def perfis_list(request):
