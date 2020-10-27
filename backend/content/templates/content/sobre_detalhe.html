@@ -6,9 +6,10 @@
 
 {% block content %}
     <div>
+        <img src="{{ sobre.logo_pb.url }}" style="max-width: 250px;">
         <h1>Sobre</h1>
-        <img src="{% static 'content/images/pyladies.jpg' %}">
+        <img src="{{ sobre.logo_br.url }}" style="max-width: 250px;">
         <p>{{ sobre.descricao|linebreaksbr }}</p>
-        <img src="{% static 'content/images/pyladies_QkQ72Ae.jpg' %}">
+        <img src="{{ sobre.foto.url }}" style="max-width: 700px;">>
     </div>
 {% endblock %}
