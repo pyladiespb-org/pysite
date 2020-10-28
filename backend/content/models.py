@@ -50,3 +50,4 @@ class Evento(models.Model):
     id_evento = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     nome = models.CharField(max_length=200)
     descricao = models.TextField(default = ' ')
+    atividades = models.ManyToManyField(Atividade)
