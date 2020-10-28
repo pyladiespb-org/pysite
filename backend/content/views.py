@@ -6,6 +6,7 @@ from .models import EventoAgendado
 from .models import Perfil
 from django.shortcuts import redirect
 from .forms import PerfilForm
+from .models import Evento
 
 def base_view(request):
     return render(request, 'content/base.html', {})
@@ -32,3 +33,7 @@ def perfil_novo(request):
     else:
         form = PerfilForm()
     return render(request, 'content/perfil_novo.html', {'form': form})
+
+def pyladiesday_eventos(request):
+    eventos = Evento.objects.all()
+    return render(request, 'content/pyladiesday_eventos.html', {'eventos': eventos})
