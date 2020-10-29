@@ -97,13 +97,13 @@ body {
 .imagem-sobre {
     display: grid;
     width: 65%;
-    
 }
 
 #sobre-pyladies-img {
     object-fit: cover;
     width: 100%;
     margin-left: 28%;
+    border-radius: 1rem;
 }
 
 nav#menu {
