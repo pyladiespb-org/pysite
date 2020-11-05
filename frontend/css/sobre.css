@@ -56,12 +56,12 @@ body {
 }
 
 .conceito h1{
-    font-family: "PT-sans", sans-serif;
+    font-family: "Krub", sans-serif;
     justify-content: center;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 6vw;
     margin-top: -10%;
-    margin-left: 35%;
+    margin-left: 36%;
     margin-bottom: -22%;
     width: min(50px, 70%);
 }
@@ -72,19 +72,19 @@ body {
     font-size: 1rem;
 }
 .texto p{
-    font-family: "PT-sans", sans-serif;
-    font-weight: 30;
-    font-size: 1.5rem;
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0%;
     margin-inline-end: 0%;
-    margin-left: 2%;
+    margin-left: 5%;
     line-height: 1.4;
-    padding: 2%;
-    font-size: clamp(1.7em, 1em + 1vw, 1.5em);
-    margin-top: 15%;
+    /*padding: 2%;*/
+    font-size: clamp(1.5em, 1em + 1vw, 1.5em);
+    margin-top: 13%;
 }
 
 #boneca-pl-inicio {
@@ -110,6 +110,6 @@ nav#menu {
     margin-top: 1.1rem;
 }
 
-footer {
+footer#footer {
     margin-top: 105%;
 }

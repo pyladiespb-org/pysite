@@ -22,7 +22,7 @@
                     <a href="pyladiesday.html">PyLadies Day</a>
                     <a href="eventos.html">Eventos</a>
                     <a href="perfis.html">Perfis</a>
-                    <a href="#footer">Contatos</a>
+                    <a href="#footer-perfis">Contatos</a>
                 </ul>
             </nav>
             <div id="definicao-perfis">
@@ -41,7 +41,6 @@
             <table class="elementsContainer">
                 <tr>
                     <td>
-                        <!--<input type="text" placeholder="Habilidade" class="pesquisa">-->
                         <select name="hab" class="pesquisa">
                             <option value="">Habilidade</option>
                             <option value="1">Ciência de Dados</option>
@@ -72,7 +71,6 @@
             <table class="elementsContainer">
                 <tr>
                     <td>
-                        <!--<input type="text" placeholder="Cidade" class="pesquisa">-->
                         <select name="city2" disabled required class="pesquisa">
                             <option value="">Cidade</option>
                         </select>
@@ -85,6 +83,12 @@
             </table>
         </div>
     </div>
+    <div class="slider-body">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <div class="slide first">
         <section>
             <div class="perfis_container">
                 <div class="card-wrapper">
@@ -212,6 +216,21 @@
                 </div>
             </div>
         </section>
+        <div class="slide">
+            <div></div>
+        </div>
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+        </div>
+    </div>
+    <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+    </div>
+</div>
+</div>
+    </div>
         <div class="formBody">
             <div class="container">
                 <h2>Cadastro</h2>
@@ -219,14 +238,14 @@
                     <div class="col">
                         <div class="inputBox">
                             <input type="text" name="" required="required">
-                            <span class="text">Nome</span>
+                            <span class="text">Nome*</span>
                             <span class="line"></span>
                         </div>
                     </div>
                     <div class="col">
                         <div class="inputBox">
                             <input type="text" name="" required="required">
-                            <span class="text">Email</span>
+                            <span class="text">Email*</span>
                             <span class="line"></span>
                         </div>
                     </div>
@@ -235,7 +254,7 @@
                     <div class="col">
                         <div class="inputBox">
                             <!--<input type="text" name="" required="required">-->
-                            <span class="text">Cidade</span>
+                            <span class="text">Cidade*</span>
                             <select name="city" disabled required class="cidade-form">
                                 <option value=""></option>
                             </select>
@@ -246,7 +265,7 @@
                     <div class="col">
                         <div class="inputBox">
                             <input type="text" name="" required="required">
-                            <span class="text">Profissão</span>
+                            <span class="text">Profissão*</span>
                             <span class="line"></span>
                         </div>
                     </div>
@@ -287,7 +306,7 @@
                     <div class="col">
                         <div class="inputBox textarea">
                             <textarea required="required"></textarea>
-                            <span class="text">Bio</span>
+                            <span class="text">Bio*</span>
                             <span class="line"></span>
                         </div>
                     </div>
@@ -304,8 +323,8 @@
                 </div>
             </div>
         </div>
-            <footer id="footer">
-                <div class="footer-content">
+            <footer id="footer-perfis">
+                <div class="footer-content" id="fcontent-perfis">
                     <p>
                         All content copyright Pyladies Paraíba &copy; 2020 • All rights reserved.
                     </p>
