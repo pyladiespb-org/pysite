@@ -1,23 +1,26 @@
 *{
-    font-family: "PT-sans", sans-serif;
+    font-family: 'Krub', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 #cabecalho {
-    height: 80vh;
+    /*height: 82vh;*/
+    height: 100%;
 }
 
 
 #menu-perfil a{
-    font-family: "PT Sans", sans-serif;
-    font-weight: bold;
-    font-size: 2.411rem;
+    font-family: 'Krub', sans-serif;
+    font-weight: 400;
+    font-size: 272%;
+    /*font-size: 2.411rem;*/
     color: #000000;
     text-decoration: none;
     display: inline;
     padding: 10.45px;
+    margin-left: ;
 }
 
 #menu-perfil {
@@ -32,9 +35,9 @@
 #menu-perfil ul{
     list-style: none;
     position: absolute;
-    left: 54.94%;
+    left: 50%;
     justify-content: space-around;
-    margin-top: 1rem;
+    margin-top: 1.2rem;
 }
 
 #boneca-pl-inicio-perfil {
@@ -55,15 +58,15 @@
 }
 .boneca-pl-pb-p img{
     object-fit: cover;
-    margin-top: -21%;
-    width: 25%;
+    margin-top: -24%;
+    width: 30%;
     height: 100%;
-    margin-left: 25%;
+    margin-left: 20%;
 }
 
 .conceito-perfis h1{
-    font-family: "PT Sans", sans-serif;
-    font-size: 6rem;
+    font-family: "Krub", sans-serif;
+    font-size: 6vw;
     font-weight: 500;
     padding-top: 15%;
     margin-left: 49%;
@@ -76,9 +79,9 @@
     height: 100%;
 }
 .conceito-perfis h2{
-    font-family: "PT Sans", sans-serif;
-    font-weight: 30;
-    font-size: 1.8rem;
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
     display: block;
     margin-left: 49.3%;
     /*font-size: clamp(1.7em, 1em + 1vw, 1.5em);*/
@@ -125,7 +128,7 @@ h2{
     margin-left: 2%;
     border-radius: 50px;
     font-size: 1.5rem;
-    font-family: "PT Sans", sans-serif;
+    font-family: "Krub", sans-serif;
     color: #777;
     font-weight: 500;
 }
@@ -157,7 +160,7 @@ h2{
 
 html {
     font-size: 10px;
-    font-family: "PT-sans", sans-serif;
+    font-family: "Krub", sans-serif;
 }
 
 a {
@@ -213,15 +216,17 @@ section {
 .job-title {
     color: #777;
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .about {
     font-size: 1.5rem;
     margin: 1.5rem 0;
-    font-style: italic;
+    font-weight: 400;
     text-align: center;
     color: #333;
+    padding: .3rem;
 }
 
 .card .btn {
@@ -326,10 +331,11 @@ section {
 
 .container h2{
     width: 100%;
-    color: #000000;
+    color:#000000;
     font-size: 36px;
     text-align: center;
     margin-bottom: 10px;
+    line-height: 5;
 }
 
 .container .row100{
@@ -353,7 +359,7 @@ section {
     position: relative;
     width: 100%;
     height: 40px;
-    color: #000000;
+    color:#404041;
 }
 
 .container .row100 .inputBox input,
@@ -453,7 +459,7 @@ section {
     font-size: 18px;
     padding: 0 10px;
     z-index: 1;
-    color: #000000;
+    color:#000000;
 }
 
 .container .row100 .inputBox select:focus + .text{
@@ -512,7 +518,7 @@ input[type="submit"]
 }
 
 ::-webkit-file-upload-button:hover{
-    background: #676768;
+    background:#404041;
 }
 
 
@@ -559,7 +565,7 @@ input[type="submit"]
 
 #footer p{
     width: 100%;
-    font-family: "PT Sans", sans-serif;
+    font-family: "Krub", sans-serif;
     font-weight: 20;
     font-size: 1.5rem;
     margin-left: 1rem;
@@ -570,4 +576,126 @@ input[type="submit"]
     height: 3rem;
     align-items: center;
     justify-items: center;
+}
+
+.slider-body{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;;
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 100%;
+    transition: 2s;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+}
+
+.navigation-manual{
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin-top: 110em;
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 700px){
+    .navigation-manual {
+        flex-direction: row;
+        margin-top: 417rem;
+    }
+}
+
+@media(min-width: 731px) and (max-width: 750px){
+    .navigation-manual {
+        flex-direction: row;
+        margin-top: 400rem;
+    }
+}
+
+@media(min-width: 720px) and (max-width: 730px){
+    .navigation-manual {
+        flex-direction: row;
+        margin-top: 400rem;
+        width: 90%;
+    }
+}
+
+@media(min-width: 751px) and (max-width: 823px){
+    .navigation-manual {
+        flex-direction: row;
+        margin-top: 207rem;
+    }
+}
+
+@media(min-width: 1024px) and (max-width: 1025px){
+    .navigation-manual {
+        flex-direction: row;
+        margin-top: 207rem;
+    }
+}
+
+
+
+.manual-btn{
+    border: 2px solid #404041;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+    width: 3rem;
+    height: 3rem;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.manual-btn:hover{
+    background: #404041;
+}
+
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+
+#radio2:checked ~.first{
+    margin-left: -100%;
+}
+
+#footer-perfis{
+    margin-top: 0%;
+    height: 9rem;
+}
+#fcontent-perfis p{
+    font-size: 1.3rem;
+}
+
+#logo-p{
+    width: 3rem;
+    height: 3rem;
 }
