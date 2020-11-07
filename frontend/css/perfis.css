@@ -1,0 +1,701 @@
+*{
+    font-family: 'Krub', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cabecalho {
+    /*height: 82vh;*/
+    height: 100%;
+}
+
+
+#menu-perfil a{
+    font-family: 'Krub', sans-serif;
+    font-weight: 400;
+    font-size: 272%;
+    /*font-size: 2.411rem;*/
+    color: #000000;
+    text-decoration: none;
+    display: inline;
+    padding: 10.45px;
+    margin-left: ;
+}
+
+#menu-perfil {
+    display: block;
+    width: 100%;
+    line-height: 2.22rem;
+    margin-bottom: 4rem;
+    padding: 1%;
+    margin-top: 2.91rem;
+}
+
+#menu-perfil ul{
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    justify-content: space-around;
+    margin-top: 1.2rem;
+}
+
+#boneca-pl-inicio-perfil {
+    width: 8.17%;
+    margin-top: -.65%;
+    margin-left: -1.09% ;
+    margin-bottom: -30%;
+    padding-bottom: 25%;
+}
+
+#definicao-perfis{
+    margin-right: 4%;
+
+}
+
+.boneca-pl-pb-p{
+    width: 100%;
+}
+.boneca-pl-pb-p img{
+    object-fit: cover;
+    margin-top: -24%;
+    width: 30%;
+    height: 100%;
+    margin-left: 20%;
+}
+
+.conceito-perfis h1{
+    font-family: "Krub", sans-serif;
+    font-size: 6vw;
+    font-weight: 500;
+    padding-top: 15%;
+    margin-left: 49%;
+    margin-bottom: -22%;
+    /*width: min(50px, 70%);*/
+}
+
+.conceito-perfis {
+    width: 100%;
+    height: 100%;
+}
+.conceito-perfis h2{
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    display: block;
+    margin-left: 49.3%;
+    /*font-size: clamp(1.7em, 1em + 1vw, 1.5em);*/
+}
+h2{
+    margin-top: 22%;
+}
+
+#sec {
+    margin-top: .5%;
+    padding-right: .3%;
+}
+
+/*Barra de Busca*/
+
+.box{
+    display: grid;
+}
+
+.boxContainer:nth-child(1) {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-left: 75%;
+    margin-top: 7%;
+    width: 20%;
+    height: 4rem;
+    border: .4rem solid #FFC905;
+    background: #ffffff;
+    border-radius: 3rem;
+    
+}
+
+.elementsContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.pesquisa {
+    background: #ffffff;
+    border: none;
+    height: 100%;
+    width: 100%;
+    margin-left: 2%;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-family: "Krub", sans-serif;
+    color: #777;
+    font-weight: 500;
+}
+
+.pesquisa:focus{
+    outline: none;
+}
+
+.fa-search{
+    font-size: 25;
+    color: #777;
+}
+
+.boxContainer:nth-child(2){
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-left: 52%;
+    margin-top: -4rem;
+    width: 20%;
+    height: 4rem;
+    border: .4rem solid #FFC905;
+    background: #ffffff;
+    border-radius: 3rem;
+}
+
+
+/*Perfis*/
+
+html {
+    font-size: 10px;
+    font-family: "Krub", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+section {
+    padding: 10rem 0;
+}
+
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.card {
+    width: 30rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    border-radius: 3%;
+    box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.card .card-img{
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+
+}
+
+.profile-img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 999;
+    border: 1rem solid #ffffff;
+}
+
+.card h1{
+    font-size: 2.5rem;
+    color: #333;
+    margin: 1.5rem 0;
+}
+
+.job-title {
+    color: #777;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.about {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-weight: 400;
+    text-align: center;
+    color: #333;
+    padding: .3rem;
+}
+
+.card .btn {
+    padding: 1rem 2.5rem;
+    background-color: #FFC905;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: #eee;
+    font-size: 1.4rem;
+}
+
+.card .btn:hover {
+    transform: translateY(.2px);
+    box-shadow: .5rem .5rem .2rem rgba(0, 0, 0, 0.1);
+}
+
+.card .btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.social-media {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.social-media i{
+    font-size: 3rem;
+    transition: color .5s;
+}
+
+.fa-facebook:hover,
+.fa-linkedin:hover,
+.fa-github:hover,
+.fa-globe-americas:hover {
+    color: #FFC905;
+    opacity: .8;
+}
+
+@media screen and (min-width: 700px) {
+    .card-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        margin: .85rem;
+        transition: transform .5s;
+    }
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .card:nth-child(1) {
+        animation: fadeIn .5s .5s backwards;
+    }
+
+    .card:nth-child(2) {
+        animation: fadeIn .5s 1s backwards;
+    }
+
+    .card:nth-child(3) {
+        animation: fadeIn .5s 1.5s backwards;
+    }
+
+    .card:nth-child(4) {
+        animation: fadeIn .5s 2s backwards;
+    }
+
+    .card:hover{
+        transform: scale(1.05);
+    }
+    
+}
+
+/*Form*/
+
+.formBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #FFC905;
+}
+
+.container {
+    width: 80%;
+    padding: 20px;
+}
+
+.container h2{
+    width: 100%;
+    color:#000000;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 5;
+}
+
+.container .row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
+}
+
+.container .row100 .col 
+{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+
+.container .row100 .inputBox 
+{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color:#404041;
+}
+
+.container .row100 .inputBox input,
+.container .row100 .inputBox.textarea textarea
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #000000;
+}
+
+
+.container .row100 .inputBox .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+
+.container .row100 .inputBox input:focus + .text{
+    top: -35px;
+    left: -10px;
+}
+
+
+.container .row100 .inputBox input:valid + .text{
+    top: -35px;
+    left: -10px;
+}
+
+
+.container .row100 .inputBox .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus ~ .line,
+.container .row100 .inputBox input:valid ~ .line
+{
+    height: 100%;
+}
+
+.container .row100 .inputBox.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.container .row100 .inputBox.textarea textarea{
+    height: 100%;
+    resize: none;
+}
+.container .row100 .inputBox textarea:focus + .text,
+.container .row100 .inputBox textarea:valid + .text
+{
+    top: -35px;
+    left: -10px;
+}
+
+.container .row100 .inputBox textarea:focus ~ .line,
+.container .row100 .inputBox textarea:valid ~ .line
+{
+    height: 100%;
+}
+
+.container .row100 .inputBox select,
+.container .row100 .inputBox.textarea textarea
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color:#000000;
+}
+
+.container .row100 .inputBox select:focus + .text{
+    top: -35px;
+    left: -10px;
+}
+
+
+.container .row100 .inputBox select:valid + .text{
+    top: -35px;
+    left: -10px;
+}
+
+.container .row100 .inputBox select:focus ~ .line,
+.container .row100 .inputBox select:valid ~ .line
+{
+    height: 100%;
+}
+
+input[type="submit"]
+{
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #ffffff;
+    color: #000000 ;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+.col-up {
+    transform: translate(-50%,-50%);
+    position: relative;
+    margin-left: 34%;
+    margin-top: 7rem;
+    
+}
+
+.file {
+    background: #ffffff;
+    width: 30rem;
+    border-radius: 50rem;
+    box-shadow: 5px 5px 10px rgba(112, 108, 108, 0.048);
+    outline: none;    
+}
+
+::-webkit-file-upload-button{
+    color: white;
+    background: #777777;
+    padding: 1rem;
+    border: none;
+    border-radius: 50rem;
+    outline: none;
+    box-shadow: 1px 0 1px #404041;
+}
+
+::-webkit-file-upload-button:hover{
+    background:#404041;
+}
+
+
+/*input[type="file"]
+{
+    display: block;
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #ffffff;
+    color: #000000 ;
+    font-size: 18px;
+    border-radius: 2px;
+}*/
+
+.cidade-form select[type="submit"]
+{
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #ffffff;
+    color: #000000 ;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+.pesquisa select[type="submit"]
+{
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #ffffff;
+    color: #000000 ;
+    font-size: 18px;
+    border-radius: 2px;
+}
+#footer{
+    margin-top: 0;
+    height: 12rem;
+}
+
+#footer p{
+    width: 100%;
+    font-family: "Krub", sans-serif;
+    font-weight: 20;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+#logo-p{
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.slider-body{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;;
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 100%;
+    transition: 2s;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+}
+
+.navigation-manual{
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin-top: 110em;
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 700px){
+    .navigation-manual {
+        flex-direction: row;
+        margin-top: 417rem;
+    }
+}
+
+@media(min-width: 731px) and (max-width: 750px){
+    .navigation-manual {
+        flex-direction: row;
+        margin-top: 400rem;
+    }
+}
+
+@media(min-width: 720px) and (max-width: 730px){
+    .navigation-manual {
+        flex-direction: row;
+        margin-top: 400rem;
+        width: 90%;
+    }
+}
+
+@media(min-width: 751px) and (max-width: 823px){
+    .navigation-manual {
+        flex-direction: row;
+        margin-top: 207rem;
+    }
+}
+
+@media(min-width: 1024px) and (max-width: 1025px){
+    .navigation-manual {
+        flex-direction: row;
+        margin-top: 207rem;
+    }
+}
+
+
+
+.manual-btn{
+    border: 2px solid #404041;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+    width: 3rem;
+    height: 3rem;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.manual-btn:hover{
+    background: #404041;
+}
+
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+
+#radio2:checked ~.first{
+    margin-left: -100%;
+}
+
+#footer-perfis{
+    margin-top: 0%;
+    height: 9rem;
+}
+#fcontent-perfis p{
+    font-size: 1.3rem;
+}
+
+#logo-p{
+    width: 3rem;
+    height: 3rem;
+}

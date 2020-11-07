@@ -5,11 +5,11 @@
 
 #banner {
     object-fit: cover;
-    width: 45%;
+    width: 55%;
     height: 100%;
     display: block;
     margin-top: 4%;
-    margin-left: 28%;
+    margin-left: 22%;
 }
 
 #especificacao {
@@ -26,7 +26,7 @@
 }
 
 .infoevento h1{
-    font-family: "PT Sans", sans-serif;
+    font-family: "Krub", sans-serif;
     color: rgba(7, 0, 0, 0.473);
 }
 
@@ -37,8 +37,8 @@
 
 section#corpo {
     width: 100%;
-    height: 100%;
-    padding-bottom: 32%;
+    height: 50rem;
+    /*padding-bottom: 32%;*/
 }
  /*Galeria*/
 
@@ -98,4 +98,201 @@ section#corpo {
     margin-left: 102.1%;
     width: 38.7%;
     margin-top: 0.12%;
+}
+
+.palestrantes {
+    width: 100%;
+    font-family: "Krub", sans-serif;
+    line-height: 1;
+    display: inline-flex;
+    place-items: center;
+    margin-top: -100%;
+}
+
+.palestrantes h1{
+    font-family: "Krub", sans-serif;
+    margin-left: 38%;
+    font-size: 100%;
+    font-weight: 500;
+    justify-content: center;
+    font-size: clamp(3rem, 1em + 1vw, 1.5em);
+}
+
+.minicursos {
+    width: 100%;
+    font-family: "Krub", sans-serif;
+    display: inline-flex;
+    place-items: center;
+    margin-top: 8%;
+}
+
+.minicursos h1{
+    font-family: "Krub", sans-serif;
+    margin-left: 40%;
+    font-size: 100%;
+    font-weight: 500;
+    justify-content: center;
+    font-size: clamp(3em, 1em + 1vw, 1.5em);
+}
+
+
+.ext-card{
+    box-sizing: border-box;
+    font-family: "Krub", sans-serif;
+    line-height: 1;
+    min-height: 75vh;
+    display: grid;
+    place-items: center;
+    margin-top: 1rem;
+}
+
+#palestrante{
+    width: 8rem;
+}
+
+.card{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    color: black;
+    text-align: center;
+    padding: 1em;
+    border-radius: 4rem;
+}
+
+.profile-name {
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+.profile-name::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 2em;
+    background: #FFC905;
+    margin: 0.7em auto 0.5em;
+    opacity: 0.35;
+}
+
+.profile-position {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 3px;
+    color: gray;
+    margin-bottom: 2em;
+}
+
+.profile-body {
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+
+.profile-image {
+    border-radius: 50%;
+    border: 4px solid #FFC905;
+}
+
+@media(min-width: 600px){
+    .card {
+        flex-direction: row;
+    }
+
+    .profile-main {
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    .profile-name::after {
+        margin-left: 0;
+    }
+}
+
+.slider-body{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide .ext-card{
+    width: 100%;
+    height: 100%;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: 0.2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-manual-2{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -3rem;
+}
+
+.manual-btn, .manual-btn-2{
+    border: 2px solid #404041 ;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+    width: .8rem;
+    height: .8rem;
+}
+
+.manual-btn:not(:last-child), .manual-btn-2:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.manual-btn:hover, .manual-btn-2:hover {
+    background: #404041;
+}
+
+#radio1:checked ~.first, #radio1-2:checked ~.first{
+    margin-left: 0;
+}
+
+#radio2:checked ~.first, #radio2-2:checked ~.first{
+    margin-left: -20%;
+}
+
+#footer-plday{
+    padding-bottom: 0;
+    height: 6.5em;
 }

@@ -4,6 +4,10 @@
     <title>Perfis - Pyladies</title>
 </head>
 
+<div>
+    <h1><a href="{% url 'perfil_novo' %}">Novo Perfil</a></h1>
+</div>
+
 <h1>Perfis</h1>
 
 {% for perfil in perfis %}
@@ -29,6 +33,6 @@
 
         <p>{{ perfil.biografia }}</p>
         
-        <img src="{% static 'content/images/pyladies.jpg' %}">
+        <img src="{{ perfil.foto.url }}" style="max-width: 700px;">
     </div>
 {% endfor %}

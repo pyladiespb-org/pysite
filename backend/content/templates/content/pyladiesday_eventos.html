@@ -1,0 +1,23 @@
+<head>
+    <title>PyLadies Day</title>
+</head>
+
+<h1>PyLadies Day</h1>
+<h1>Eventos</h1>
+
+{% for evento in eventos %}
+    <div>
+        <h2>{{ evento.nome }}</h2>
+        <p>{{ evento.descricao }}</p>
+        {% for atividade in evento.atividades.all %}
+                <h1>{{ atividade.nome_atividade }}</h1>
+                <p>{{ atividade.tipo_atividade }}</p>
+                <p>{{ atividade.nome_ministrante }}</p>
+                <img src="{{ atividade.foto_ministrante.url }}" style="max-width: 250px;"> 
+                <p>{{ atividade.descricao_atividade }}</p>
+                {% if atividade.link != None %}
+                    <a href="{{ atividade.link }}">{{ atividade.link }}</a>
+                {% endif %}
+        {% endfor %}
+    </div>
+{% endfor %}
