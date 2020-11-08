@@ -8,23 +8,33 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="favicon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <link rel="favicon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
     <div id="interface">
         <header id="cabecalho">
-            <nav id="menu-perfil">
-                <a href="index.html"><img src="imagens/logo-mascara-pyladies-pb.png" alt="boneca-pl-inicio" id="boneca-pl-inicio-perfil"></a>
-                <ul type="disc">
-                    <a href="sobre.html">Sobre</a>
-                    <a href="pyladiesday.html">PyLadies Day</a>
-                    <a href="eventos.html">Eventos</a>
-                    <a href="perfis.html">Perfis</a>
-                    <a href="#footer-perfis">Contatos</a>
-                </ul>
-            </nav>
+            <div class="menu-container">
+                <nav id="menu-perfil">
+                    <a href="index.html"><img src="imagens/logo-mascara-pyladies-pb.png" alt="boneca-pl-inicio" id="boneca-pl-inicio-perfil"></a>
+                    <input type="checkbox" id="nav" class="hidden">
+                    <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </label>
+                    <div class="nav-wrapper">
+                    <ul type="disc">
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="pyladiesday.html">PyLadies Day</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="perfis.html">Perfis</a></li>
+                        <li><a href="#footer-perfis">Contatos</a></li>
+                    </ul>
+                    </div>
+                </nav>
+                </div>
             <div id="definicao-perfis">
                 <div class="conceito-perfis">
                     <h1>Perfis</h1>
@@ -232,6 +242,7 @@
 </div>
     </div>
         <div class="formBody">
+            <h1 href="https://www.pretalab.com/">Perfis inspirados no site <a href="https://www.pretalab.com/">PretaLab,</a>que reúne profissionais negras brasileiras atuantes no campo da tecnologia e inovação. Como elas, nós também queremos criar um portfolio com garotas integrantes do PyLadies Paraíba, faça seu cadastro e apareça no site! </h1>
             <div class="container">
                 <h2>Cadastro</h2>
                 <div class="row100">

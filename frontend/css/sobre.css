@@ -41,18 +41,18 @@ body {
 
 #bonequinha-pl-br{
     object-fit: cover;
-    width: 12%;
+    width: 12.2%;
     height: 45%;
-    margin-left: 17%;
-    margin-top: -3.8%;
+    margin-left: 21.5%;
+    margin-top: -3.95%;
 }
 
 #bonequinha-pl-pb{
     object-fit: cover;
-    width: 18.2%;
+    width: 18.4%;
     height: 45%;
-    margin-left: 65%;
-    margin-top: 10.5%;
+    margin-left: 61.5%;
+    margin-top: 10.8%;
 }
 
 .conceito h1{
@@ -73,19 +73,21 @@ body {
 }
 .texto p{
     font-family: "Krub", sans-serif;
-    font-weight: 400;
+    text-align: justify;
+    font-weight: 300;
     font-size: 1.5em;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0%;
     margin-inline-end: 0%;
-    margin-left: 5%;
+    margin-left: 0%;
     line-height: 1.4;
-    /*padding: 2%;*/
+    padding: 2%;
     font-size: clamp(1.5em, 1em + 1vw, 1.5em);
     margin-top: 13%;
 }
+
 
 #boneca-pl-inicio {
     width: 8%;
@@ -102,7 +104,7 @@ body {
 #sobre-pyladies-img {
     object-fit: cover;
     width: 100%;
-    margin-left: 28%;
+    margin-left: 27%;
     border-radius: 1rem;
 }
 
@@ -112,4 +114,10 @@ nav#menu {
 
 footer#footer {
     margin-top: 105%;
+}
+
+@media (min-width: 320px) and (max-width: 414px) {
+    #footer {
+        height: 7rem;
+    }
 }
