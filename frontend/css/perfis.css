@@ -512,7 +512,7 @@ section {
     
 }
 
-@media(min-width: 1024px) and (max-width: 1300px){
+@media(min-width: 1024px) and (max-width: 1350px){
     .container{
         margin-top: 30%;
     }
@@ -524,7 +524,7 @@ section {
     .formBody h1{
         width: 90%;
         position: absolute;
-        margin-top: -100rem;
+        margin-top: -40rem;
         text-align: justify;
         font-family: "Krub", sans-serif;
         font-weight: 400;
