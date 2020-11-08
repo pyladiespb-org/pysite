@@ -10,20 +10,31 @@
     <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
     <div id="interface">
         <header id="cabecalho">
-            <nav id="menu">
-                <a href="index.html"><img src="imagens/logo-mascara-pyladies-pb.png" alt="boneca-pl-inicio" id="boneca-pl-inicio"></a>
-                <ul type="disc">
-                    <a href="sobre.html">Sobre</a>
-                    <a href="pyladiesday.html">PyLadies Day</a>
-                    <a href="eventos.html">Eventos</a>
-                    <a href="perfis.html">Perfis</a>
-                    <a href="#footer-plday">Contatos</a>
-                </ul>
-            </nav>
+            <div class="menu-container">
+                <nav id="menu">
+                    <a href="index.html"><img src="imagens/logo-mascara-pyladies-pb.png" alt="boneca-pl-inicio" id="boneca-pl-inicio"></a>
+                    <input type="checkbox" id="nav" class="hidden">
+                    <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </label>
+                    <div class="nav-wrapper">
+                    <ul type="disc">
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="pyladiesday.html">PyLadies Day</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="perfis.html">Perfis</a></li>
+                        <li><a href="#footer-plday">Contatos</a></li>
+                    </ul>
+                    </div>
+                </nav>
+                </div>
             <div id="definicao">
                 <div class="banner">
                     <img src="imagens/PyladiesDay.png" alt="banner-pyladiesday" id="banner">
@@ -31,10 +42,8 @@
             </div>
             <div id="especificacao">
                 <div class="infoevento">
-                    <h1>Falando sobre o evento</h1>
-                    <h2>.</h2>
-                    <h2>.</h2>
-                    <h2>.</h2>
+                    <p>O PyLadies Day é um evento que procura gerar a interação, a motivação e o aperfeiçoamento entre as integrantes do PyLadies espalhadas pelo estado da Paraíba, através de palestras e minicursos, ministrados por professoras, alunas e pesquisadoras da área.</p> 
+                    <p id="segundo-p">Ao longo de um dia inteiro, as integrantes são constantemente instigadas a pensar criticamente sobre o lugar da mulher dentro da TI e sobre os desafios do mercado de trabalho. Além disso, essas participantes aperfeiçoam suas habilidades em novas áreas e, dessa forma, agregam informações preciosas para sua carreira profissional.</p>
                 </div>
             </div>
             <section id="corpo">
@@ -82,7 +91,7 @@
                                 </div>
                                 <div class="profile-main">
                                     <h2 class="profile-name">Vanessa Dantas</h2>
-                                    <p class="profile-position">Perguntar a Mirlla</p>
+                                    <p class="profile-position">Professora da UFPB - Campus IV (Rio Tinto)</p>
                                     <p class="profile-body"> Por que as mulheres não gostam de programar?</p>
                                 </div>
                             </div>
@@ -92,21 +101,21 @@
                         <div class="ext-card">
                             <div class="card">
                                 <div class="profile-sidebar">
-                                    <img class="profile-image" src="imagens/palestrante1.png" alt="Dandara" id="palestrante">
+                                    <img class="profile-image" src="imagens/palestrante1.png" alt="Ana" id="palestrante">
                                 </div>
                                 <div class="profile-main">
                                     <h2 class="profile-name">Ana Silva</h2>
-                                    <p class="profile-position">Perguntar a Mirlla</p>
+                                    <p class="profile-position">Engenheira de Software - ênfase em aspectos humanos</p>
                                     <p class="profile-body"> Análise de sentimentos com Python</p>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="profile-sidebar">
-                                    <img class="profile-image" src="imagens/palestrante2.png" alt="Vanessa" id="palestrante">
+                                    <img class="profile-image" src="imagens/palestrante2.png" alt="Fernanda" id="palestrante">
                                 </div>
                                 <div class="profile-main">
                                     <h2 class="profile-name">Fernanda Vieira</h2>
-                                    <p class="profile-position">Perguntar a Mirlla</p>
+                                    <p class="profile-position">Analista e desenvolvedora de software</p>
                                     <p class="profile-body"> Python para Web: Django Girls</p>
                                 </div>
                             </div>
@@ -135,11 +144,11 @@
                                 <div class="ext-card">
                                     <div class="card">
                                         <div class="profile-sidebar">
-                                            <img class="profile-image" src="imagens/palestrante2.png" alt="Dandara" id="palestrante">
+                                            <img class="profile-image" src="imagens/palestrante2.png" alt="Fernanda" id="palestrante">
                                         </div>
                                         <div class="profile-main">
                                             <h2 class="profile-name">Fernanda Vieira</h2>
-                                            <p class="profile-position">Perguntar a Mirlla</p>
+                                            <p class="profile-position">Analista e desenvolvedora de software</p>
                                             <p class="profile-body">Introdução a Django</p>
                                         </div>
                                     </div>
@@ -149,11 +158,11 @@
                                 <div class="ext-card">
                                     <div class="card">
                                         <div class="profile-sidebar">
-                                            <img class="profile-image" src="imagens/palestrante5.png" alt="Dandara" id="palestrante">
+                                            <img class="profile-image" src="imagens/palestrante5.png" alt="Elayni" id="palestrante">
                                         </div>
                                         <div class="profile-main">
                                             <h2 class="profile-name">Elayni Franco</h2>
-                                            <p class="profile-position">Perguntar a Mirlla</p>
+                                            <p class="profile-position">Graduanda em Ciência de Dados e Inteligência Artificial pela UFPB</p>
                                             <p class="profile-body">Introdução a Python</p>
                                         </div>
                                     </div>

@@ -22,12 +22,31 @@
     margin: 0 auto 2em auto;
     max-width: 56.25rem;
     font-size: 1.125rem;
-    padding-left: 3%;
+    padding-left: 0%;
 }
 
+.infoevento p{
+    font-family: "Krub", sans-serif;
+    text-align: justify;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: -20%;
+    padding: 2%;
+}
+
+#segundo-p{
+    margin-top: 1rem;
+}
+
+#especificacao{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .infoevento h1{
     font-family: "Krub", sans-serif;
-    color: rgba(7, 0, 0, 0.473);
+    font-weight: 400;
+    font-size: 170%;
 }
 
 .infoevento h2{
@@ -107,6 +126,7 @@ section#corpo {
     display: inline-flex;
     place-items: center;
     margin-top: -100%;
+    text-align: center;
 }
 
 .palestrantes h1{
@@ -124,6 +144,7 @@ section#corpo {
     display: inline-flex;
     place-items: center;
     margin-top: 8%;
+    text-align: center;
 }
 
 .minicursos h1{
@@ -295,4 +316,50 @@ section#corpo {
 #footer-plday{
     padding-bottom: 0;
     height: 6.5em;
+}
+
+@media(min-width: 320px) and (max-width: 812px){
+    .palestrantes h1{
+        font-family: "Krub", sans-serif;
+        margin-left: 31%;
+        font-size: 100%;
+        font-weight: 500;
+        justify-content: center;
+        font-size: clamp(3rem, 1em + 1vw, 1.5em);
+    }
+    
+    .minicursos h1{
+        font-family: "Krub", sans-serif;
+        margin-left: 35%;
+        font-size: 100%;
+        font-weight: 500;
+        justify-content: center;
+        font-size: clamp(3em, 1em + 1vw, 1.5em);
+    }
+}
+
+@media(min-width: 568px) and (max-width: 639px){
+    .navigation-manual-2{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+
+@media(min-width: 812px) {
+    .navigation-manual-2{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: .5rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 360px) {
+    #footer-plday {
+        height: 7rem;
+    }
 }
