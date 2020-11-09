@@ -10,20 +10,31 @@
     <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
     <div id="interface">
         <header id="cabecalho">
-            <nav id="menu">
-                <a href="index.html"><img src="imagens/logo-mascara-pyladies-pb.png" alt="boneca-pl-inicio" id="boneca-pl-inicio"></a>
-                <ul type="disc">
-                    <a href="sobre.html">Sobre</a>
-                    <a href="pyladiesday.html">PyLadies Day</a>
-                    <a href="eventos.html">Eventos</a>
-                    <a href="perfis.html">Perfis</a>
-                    <a href="#footer">Contatos</a>
-                </ul>
-            </nav>
+            <div class="menu-container">
+                <nav id="menu">
+                    <a href="index.html"><img src="imagens/logo-mascara-pyladies-pb.png" alt="boneca-pl-inicio" id="boneca-pl-inicio"></a>
+                    <input type="checkbox" id="nav" class="hidden">
+                    <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </label>
+                    <div class="nav-wrapper">
+                    <ul type="disc">
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="pyladiesday.html">PyLadies Day</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="perfis.html">Perfis</a></li>
+                        <li><a href="#footer-eventos">Contatos</a></li>
+                    </ul>
+                    </div>
+                </nav>
+                </div>
             <div id="definicao">
                 <div class="conceito">
                     <h1>Eventos</h1> 
@@ -63,7 +74,7 @@
                                          Conversa entre PyLadies
                                      </div>
                                      <div class="day">
-                                         13 / 08
+                                         01 / 01
                                      </div>
                                      <div class="year">
                                          2020
@@ -83,7 +94,7 @@
                                         Conversa entre PyLadies
                                     </div>
                                     <div class="day">
-                                        13 / 08
+                                        01 / 01
                                     </div>
                                     <div class="year">
                                         2020
@@ -95,6 +106,7 @@
                             </li>
                         </ul>
                     </div>
+
                         </div>
                      </div>
                      <div class="slide slide_2">
@@ -108,7 +120,7 @@
                                          Conversa entre PyLadies
                                      </div>
                                      <div class="day">
-                                         13 / 08
+                                         02 / 02
                                      </div>
                                      <div class="year">
                                          2020
@@ -128,7 +140,7 @@
                                         Conversa entre PyLadies
                                     </div>
                                     <div class="day">
-                                        13 / 08
+                                        02 / 02
                                     </div>
                                     <div class="year">
                                         2020
@@ -153,7 +165,7 @@
                                             Conversa entre PyLadies
                                         </div>
                                         <div class="day">
-                                            13 / 08
+                                            03 / 03
                                         </div>
                                         <div class="year">
                                             2020
@@ -178,7 +190,7 @@
                                             Conversa entre PyLadies
                                         </div>
                                         <div class="day">
-                                            13 / 08
+                                            04 / 04
                                         </div>
                                         <div class="year">
                                             2020
@@ -237,7 +249,26 @@
                      <div class="slide slide_12">
                         <div class="slide-content">
                            <h2>Dezembro</h2>
-                           <p>Content for Slide 12</p>
+                           <div class="events-container" id="archive">
+                            <ul class="grid">
+                                <li data="2020-08-13">
+                                    <a href="https://www.youtube.com/watch?v=KcHBagq9hfo&t=204s" target="_blank">
+                                        <div class="month">
+                                            Conversa entre PyLadies
+                                        </div>
+                                        <div class="day">
+                                            13 / 08
+                                        </div>
+                                        <div class="year">
+                                            2020
+                                        </div>
+                                        <div class="local">
+                                            Youtube
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                         </div>
                      </div>
 
@@ -274,31 +305,7 @@
             </div>
          </div>            
 
-
-        <!--<section>
-            <div class="events-container" id="archive">
-                <ul class="grid">
-                    <li data="2020-08-13">
-                        <a href="https://www.youtube.com/watch?v=KcHBagq9hfo&t=204s" target="_blank">
-                            <div class="month">
-                                Conversa entre PyLadies
-                            </div>
-                            <div class="day">
-                                13 / 08
-                            </div>
-                            <div class="year">
-                                2020
-                            </div>
-                            <div class="local">
-                                Youtube
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>-->
-
-        <footer id="footer">
+        <footer id="footer-eventos">
             <div class="footer-content">
                 <p>
                     All content copyright Pyladies Paraíba &copy; 2020 • All rights reserved.

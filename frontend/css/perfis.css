@@ -10,40 +10,91 @@
     height: 100%;
 }
 
-
-#menu-perfil a{
+nav#menu-perfil a {
     font-family: 'Krub', sans-serif;
     font-weight: 400;
+    /*font-size: 1.7rem;*/
     font-size: 272%;
-    /*font-size: 2.411rem;*/
-    color: #000000;
+    color: black;
     text-decoration: none;
     display: inline;
-    padding: 10.45px;
-    margin-left: ;
+    padding: 10px;
 }
 
-#menu-perfil {
+nav#menu-perfil {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
     display: block;
     width: 100%;
-    line-height: 2.22rem;
-    margin-bottom: 4rem;
-    padding: 1%;
-    margin-top: 2.91rem;
+    line-height: 2.7rem;
+    margin-bottom: 5.5rem;
 }
 
-#menu-perfil ul{
+nav#menu-perfil ul {
+    float: right;
     list-style: none;
     position: absolute;
     left: 50%;
     justify-content: space-around;
-    margin-top: 1.2rem;
+    margin-top: -0.1%;
 }
 
+nav#menu-perfil li{
+    display: inline-block;
+    float: left;
+}
+
+
+nav#menu-perfil ul li a{
+    position: relative;
+}
+
+nav#menu-perfil ul li a:hover {
+    color:#404041;
+    transition: .7s;
+    /*FFC905*/
+}
+
+nav#menu-perfil ul li a:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transform: translateX(-50%) scaleX(0) ;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 90%;
+    height: 2.8px;
+    background-color:  #867979;
+    -webkit-transition: transform 250ms;
+    transition: transform 250ms;
+}
+
+nav#menu-perfil ul li a:hover:after{
+    -webkit-transform:translateX(-50%) scaleX(1);
+    transform:translateX(-50%) scaleX(1);
+}
+
+/*NavBar*/
+
+
+nav#menu-perfil ul li a {
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+}
+
+
+
+
 #boneca-pl-inicio-perfil {
-    width: 8.17%;
-    margin-top: -.65%;
-    margin-left: -1.09% ;
+    width: 8.16%;
+    margin-top: 2.45%;
+    /*margin-top: -.65%;*/
+    margin-left: 0% ;
     margin-bottom: -30%;
     padding-bottom: 25%;
 }
@@ -58,10 +109,10 @@
 }
 .boneca-pl-pb-p img{
     object-fit: cover;
-    margin-top: -24%;
-    width: 30%;
+    margin-top: -25.5%;
+    width: 32%;
     height: 100%;
-    margin-left: 20%;
+    margin-left: 19.5%;
 }
 
 .conceito-perfis h1{
@@ -70,7 +121,7 @@
     font-weight: 500;
     padding-top: 15%;
     margin-left: 49%;
-    margin-bottom: -22%;
+    margin-bottom: -23%;
     /*width: min(50px, 70%);*/
 }
 
@@ -91,7 +142,7 @@ h2{
 }
 
 #sec {
-    margin-top: .5%;
+    margin-top: 0%;
     padding-right: .3%;
 }
 
@@ -316,13 +367,187 @@ section {
 
 /*Form*/
 
+
+
 .formBody {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     background: #FFC905;
+    width: 100%;
 }
+
+.formBody h1{
+    width: 100%;
+    position: absolute;
+    margin-top: -82rem;
+    text-align: justify;
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: #404041;
+    padding: 9%;
+
+}
+
+.formBody a{
+    font-style: italic;
+    width: 100%;
+    text-align: justify;
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    color: #404041;
+    padding: 2%;
+}
+
+.formBody a:hover{
+    opacity: .7;
+}
+
+
+@media(min-width: 280px) and (max-width: 500px){
+    .container{
+        margin-top: 150%;
+    }
+
+    .container h2{
+        line-height: 5;
+    }
+    
+    .formBody h1{
+        width: 100%;
+        position: absolute;
+        margin-top: -140rem;
+        text-align: justify;
+        font-family: "Krub", sans-serif;
+        font-weight: 400;
+        font-size: 3.5rem;
+        color: #404041;
+        padding: 7%;
+    }
+    
+    .formBody a{
+        font-style: italic;
+        width: 100%;
+        text-align: justify;
+        font-family: "Krub", sans-serif;
+        font-weight: 400;
+        font-size: 3rem;
+        color: #404041;
+        padding: 2%;
+    }
+    
+}
+
+@media(min-width: 540px) and (max-width: 568px){
+    .container{
+        margin-top: 100%;
+    }
+
+    .container h2{
+        line-height: 5;
+    }
+
+    
+    .formBody h1{
+        width: 100%;
+        position: absolute;
+        margin-top: -100rem;
+        text-align: justify;
+        font-family: "Krub", sans-serif;
+        font-weight: 400;
+        font-size: 3.5rem;
+        color: #404041;
+        padding: 7%;
+    
+    }
+    
+    .formBody a{
+        font-style: italic;
+        width: 100%;
+        text-align: justify;
+        font-family: "Krub", sans-serif;
+        font-weight: 400;
+        font-size: 3rem;
+        color: #404041;
+        padding: 2%;
+    }
+    
+}
+
+@media(min-width: 640px) and (max-width: 1020px){
+    .container{
+        margin-top: 70%;
+    }
+
+    .container h2{
+        line-height: 5;
+    }
+    
+    .formBody h1{
+        width: 100%;
+        position: absolute;
+        margin-top: -70rem;
+        text-align: justify;
+        font-family: "Krub", sans-serif;
+        font-weight: 400;
+        font-size: 3.5rem;
+        color: #404041;
+        padding: 7%;
+    
+    }
+    
+    .formBody a{
+        font-style: italic;
+        width: 100%;
+        text-align: justify;
+        font-family: "Krub", sans-serif;
+        font-weight: 400;
+        font-size: 3rem;
+        color: #404041;
+        padding: 2%;
+    }
+    
+}
+
+@media(min-width: 1024px) and (max-width: 1350px){
+    .container{
+        margin-top: 30%;
+    }
+
+    .container h2{
+        line-height: 5;
+    }
+    
+    .formBody h1{
+        width: 90%;
+        position: absolute;
+        margin-top: -40rem;
+        text-align: justify;
+        font-family: "Krub", sans-serif;
+        font-weight: 400;
+        font-size: 3.5rem;
+        color: #404041;
+        padding: 7%;
+    
+    }
+    
+    .formBody a{
+        font-style: italic;
+        width: 100%;
+        text-align: justify;
+        font-family: "Krub", sans-serif;
+        font-weight: 400;
+        font-size: 3rem;
+        color: #404041;
+        padding: 2%;
+    }
+}
+
+
+
 
 .container {
     width: 80%;
@@ -336,6 +561,7 @@ section {
     text-align: center;
     margin-bottom: 10px;
     line-height: 5;
+    margin-top: 30%;
 }
 
 .container .row100{
@@ -618,7 +844,7 @@ input[type="submit"]
     display: inline-block;
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     margin-top: 110em;
     display: flex;
     justify-content: center;
@@ -660,6 +886,13 @@ input[type="submit"]
     }
 }
 
+@media(min-width: 280px) and (max-width: 539px){
+    .navigation-manual {
+        flex-direction: row;
+        margin-top: 425rem;
+    }
+}
+
 
 
 .manual-btn{
@@ -698,4 +931,12 @@ input[type="submit"]
 #logo-p{
     width: 3rem;
     height: 3rem;
+}
+
+#pretalab{
+    font-family: "Krub", sans-serif;
+    margin-top: 2%;
+    font-weight: 400;
+    text-align: justify;
+    cursor: pointer;
 }

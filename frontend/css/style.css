@@ -19,6 +19,13 @@
     }
 }
 
+@media (min-width: 320px) and (max-width: 360px) {
+    #footer {
+        height: 7rem;
+    }
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -29,6 +36,10 @@ header {
 }
 body {
     background-color: #ffcd58;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
 }
 
 a {
@@ -43,6 +54,10 @@ a {
 }
 
 nav#menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
     display: block;
     width: 100%;
     line-height: 2.7rem;
@@ -50,12 +65,195 @@ nav#menu {
 }
 
 nav#menu ul {
+    float: right;
     list-style: none;
     position: absolute;
     left: 50%;
     justify-content: space-around;
-    margin-top: 1.2rem;
+    margin-top: .7rem;
 }
+
+nav#menu li{
+    display: inline-block;
+    float: left;
+}
+
+nav#menu ul li a{
+    position: relative;
+}
+
+nav#menu ul li a:hover {
+    color:#000000;
+    transition: .7s;
+    /*FFC905*/
+}
+
+nav#menu ul li a:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transform: translateX(-50%) scaleX(0) ;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 90%;
+    height: 1.5px;
+    background-color:  #867979;
+    -webkit-transition: transform 250ms;
+    transition: transform 250ms;
+}
+
+nav#menu ul li a:hover:after{
+    -webkit-transform:translateX(-50%) scaleX(1);
+    transform:translateX(-50%) scaleX(1);
+}
+
+/*NavBar*/
+
+
+nav#menu ul li a {
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px){
+    .nav-wrapper{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: #ffcd58;
+        opacity: 0;
+        transition: all 0.2s ease;
+    }
+
+    .nav-wrapper ul{
+        position: absolute;
+        top: 35%;
+        transform: translate(-50%);
+        width: 100%;
+    }
+
+    .nav-wrapper ul li{
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+
+    .nav-wrapper ul li:nth-child(1) a {
+        transition-delay: 0.2s;
+    }
+
+    .nav-wrapper ul li:nth-child(2) a {
+        transition-delay: 0.3s;
+    }
+
+    .nav-wrapper ul li:nth-child(3) a {
+        transition-delay: 0.4s;
+    }
+
+    .nav-wrapper ul li:nth-child(4) a {
+        transition-delay: 0.5s;
+    }
+
+    .nav-wrapper ul li:nth-child(5) a {
+        transition-delay: 0.6s;
+    }
+
+    .nav-wrapper ul li:not(:first-child){
+        margin-left: 0;
+    }
+
+    .nav-wrapper ul li a{
+        padding: 10px 20px;
+        opacity: 0;
+        color: #000000;
+        transform: translateX(-20px);
+        transition: all 0.2s ease;
+    }
+
+    .nav-btn {
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        display: block;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        z-index: 9999;
+        border-radius: 50%;
+    }
+
+    .nav-btn i{
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #000000;
+        border-radius: 2px;
+        margin-left: 14px;
+    }
+
+    .nav-btn i:nth-child(1){
+        margin-top: 16px;
+    }
+
+    .nav-btn i:nth-child(2){
+        margin-top: 4px;
+        opacity: 1;
+    }
+
+    .nav-btn i:nth-child(3){
+        margin-top: 4px;
+    }
+
+}
+
+
+#nav:checked + .nav-btn{
+    transform: rotate(45deg);
+}
+
+#nav:checked + .nav-btn i{
+    background: #000000;
+    transition: transform 0.2s ease;
+}
+
+#nav:checked + .nav-btn i:nth-child(1){
+    transform: translateY(6px) rotate(180deg);
+}
+
+#nav:checked + .nav-btn i:nth-child(2){
+    opacity: 0;
+}
+
+#nav:checked + .nav-btn i:nth-child(3){
+    transform: translateY(-6px) rotate(90deg);
+}
+
+#nav:checked ~ .nav-wrapper{
+    z-index: 9990;
+    opacity: 1;
+}
+
+#nav:checked ~ .nav-wrapper ul li a{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+
+
 
 .boneca-pl-pb {
     width: 100%;
@@ -63,10 +261,10 @@ nav#menu ul {
 
 .boneca-pl-pb img{
     object-fit: cover;
-    width: 39.5%;
+    width: 44%;
     height: 45%;
-    margin-left: 1.5%;
-    margin-top: -32.7%;
+    margin-left: -1.8%;
+    margin-top: -35.5%;
 }
 
 .conceito h1{
@@ -84,14 +282,6 @@ nav#menu ul {
     margin-left: 39%;
     /*padding-top: 25%;*/
     padding: .5%;
-    
-}
-
-.conceito h2{
-    font-family: 'Krub', sans-serif;
-    font-weight: 400;
-    font-size: 1.2rem;
-    margin-left: 39%;
 }
 
 footer{
