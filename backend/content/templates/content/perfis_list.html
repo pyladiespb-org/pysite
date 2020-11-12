@@ -1,38 +1,210 @@
+{% extends 'content/base.html' %}
 {% load static %}
 
-<head>
-    <title>Perfis - Pyladies</title>
-</head>
-
-<div>
-    <h1><a href="{% url 'perfil_novo' %}">Novo Perfil</a></h1>
-</div>
-
-<h1>Perfis</h1>
-
-{% for perfil in perfis %}
-    <div>
-        <h2>{{ perfil.nome }}</h2>
-
-        <p>Email: {{ perfil.email }}</p>
-        <p>Cidade: {{ perfil.cidade }}</p>
-        <p>Profissão: {{ perfil.profissao }}</p>
-
-        {% if perfil.linkedin != None %}
-            <p>LinkedIn: <a href="{{ perfil.linkedin }}">{{ perfil.linkedin }}</a></p>
-        {% endif %}
-        {% if perfil.site != None %}
-            <p>Site: <a href="{{ perfil.site }}">{{ perfil.site }}</a></p>
-        {% endif %}
-        {% if perfil.github != None %}
-            <p>Github: <a href="{{ perfil.github }}">{{ perfil.github }}</a></p>
-        {% endif %}
-        {% if perfil.facebook != None %}
-            <p>Facebook: <a href="{{ perfil.facebook }}">{{ perfil.facebook }}</a></p>
-        {% endif %}
-
-        <p>{{ perfil.biografia }}</p>
-        
-        <img src="{{ perfil.foto.url }}" style="max-width: 700px;">
-    </div>
-{% endfor %}
+{% block content %}
+    <link rel="stylesheet" href= "../static/css/perfis.css">
+        <div id="definicao-perfis">
+            <div class="conceito-perfis">
+                <h1>Perfis</h1>
+                <h2>O PyLadies reúne os perfis de profissionais mulheres</h2> 
+                <h2 id="sec">que fazem parte da comunidade.</h2> 
+            </div>
+            <div class="boneca-pl-pb-p">
+                <img src="{% static 'content/images/logo-mascara-pyladies-pb.png' %}" alt="imagem boneca pyLadies Paraíba com máscara" id="bonequinha-pl-pb-p">
+            </div>
+        </div>
+        </header>
+        <div class="box">
+        <div class="boxContainer">
+        <table class="elementsContainer">
+            <tr>
+                <td>
+                    <select name="hab" class="pesquisa">
+                        <option value="">Habilidade</option>
+                        <option value="1">Ciência de Dados</option>
+                        <option value="2">Desenvolvimento Front End</option>
+                        <option value="3">Desenvolvimento Back End</option>
+                        <option value="4">Engenharia</option>
+                        <option value="5">Cibersegurança</option>
+                        <option value="6">DevOps</option>
+                        <option value="7">Inteligência Artificial</option>
+                        <option value="8">Aprendizado de Máquina</option>
+                        <option value="9">Geoprocessamento</option>
+                        <option value="10">Matemática, estatística, física</option>
+                        <option value="11">Pesquisa e Docência</option>
+                        <option value="12">Comunicação digital e redes sociais</option>
+                        <option value="13">Ux e UI Design</option>
+                        <option value="14">Robótica e automação</option>
+                        <option value="15">Eletrônica</option>
+                        <option value="16">Cloud Computing</option>
+                    </select>
+                </td>
+                <td>
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </td>
+            </tr>
+        </table>
+        </div>
+        <div class="boxContainer">
+        <table class="elementsContainer">
+            <tr>
+                <td>
+                    <select name="city2" disabled required class="pesquisa">
+                        <option value="">Cidade</option>
+                    </select>
+                    <script src="cidade-seletor2/select-city2.js"></script>
+                </td>
+                <td>
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </td>
+            </tr>
+        </table>
+        </div>
+        </div>
+        <div class="slider-body">
+        <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <div class="slide first">
+        <section>
+        <div class="perfis_container">
+            <div class="card-wrapper">
+                {% for perfil in perfis %}
+                    <div class="card">
+                        <img src="{{ perfil.foto.url }}" class="profile-img">
+                        <h1>{{ perfil.nome }}</h1>
+                        <p class="job-title">{{ perfil.profissao }}</p>
+                        <p class="about">
+                            {{ perfil.biografia }}
+                        </p>
+                        <ul class="social-media">
+                            {% if perfil.facebook != None %}
+                                <li><a href="{{ perfil.facebook }}"><i class="fab fa-facebook"></i></a></li>
+                            {% endif %}
+                            {% if perfil.linkedin != None %}
+                                <li><a href="{{ perfil.linkedin }}"><i class="fab fa-linkedin"></i></a></li>
+                            {% endif %}
+                            {% if perfil.github != None %}
+                                <li><a href="{{ perfil.github }}"><i class="fab fa-github"></i></a></li>
+                            {% endif %}  
+                            {% if perfil.site != None %}
+                                <li><a href="{{ perfil.facebook }}"><i class="fas fa-globe-americas"></i></a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        </section>
+        <div class="slide">
+        <div></div>
+        </div>
+        <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        </div>
+        </div>
+        <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="formBody">
+        <h1 href="https://www.pretalab.com/">Perfis inspirados no site <a href="https://www.pretalab.com/">PretaLab,</a>que reúne profissionais negras brasileiras atuantes no campo da tecnologia e inovação. Como elas, nós também queremos criar um portfolio com garotas integrantes do PyLadies Paraíba, faça seu cadastro e apareça no site! </h1>
+        <div class="container">
+            <h2>Cadastro</h2>
+            <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" required="required" value="{{ form.nome }}">
+                        <span class="text">Nome*</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" required="required" value="{{ form.email }}">
+                        <span class="text">Email*</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox">
+                        <!--<input type="text" name="" required="required">-->
+                        <span class="text">Cidade*</span>
+                        <select name="city" disabled required class="cidade-form">
+                            <option value=""></option>
+                        </select>
+                        <script src="cidade-seletor/select-city.js"></script>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" required="required" value="{{ form.profissao }}">
+                        <span class="text">Profissão*</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" required="required" value="{{ form.linkedin }}">
+                        <span class="text">Linkedin (URL)</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" required="required" value="{{ form.linkedin }}">
+                        <span class="text">Github (URL)</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" required="required" value="{{ form.site }}">
+                        <span class="text">Site (URL)</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" required="required" value="{{ form.facebook }}">
+                        <span class="text">Facebook (URL)</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox textarea">
+                        <textarea required="required" value="{{ form.biografia }}"></textarea>
+                        <span class="text">Bio*</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row100">
+                <div class="col-up">
+                    <input type="file" class="file" accept="image/*" value="{{ form.foto }}">
+                </div>
+            </div>
+            <div class="row100">
+                <div class="col">
+                    <input type="submit" value="Cadastrar-se">
+                </div>
+            </div>
+            </form>
+        </div>
+        </div>
+{% endblock %}

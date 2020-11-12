@@ -1,0 +1,123 @@
+body {
+    height: 100vh;
+    text-rendering: optimizeLegibility;
+    display: block;
+}
+
+#definicao {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.bonecas-pl {
+    width: 100%;
+    height: 100%;
+    margin-top: -25%;
+    display: block;
+    justify-items: center;
+    align-items: center;
+}
+.bonecas-pl-boneca-pl-pb {
+    width: 100%;
+}
+
+.bonecas-pl-boneca-pl-pb img{
+    object-fit: cover;
+    width: 20%;
+    height: 45%;
+    margin-left: 65%;
+}
+
+.bonecas-pl-boneca-pl-br {
+    width: 100%;
+}
+
+.boneca-pl-br {
+    width: 100%;
+    height: 100%;
+    margin-top: -12%;
+    display: block;
+}
+
+#bonequinha-pl-br{
+    object-fit: cover;
+    width: 12.2%;
+    height: 45%;
+    margin-left: 21.5%;
+    margin-top: -3.95%;
+}
+
+#bonequinha-pl-pb{
+    object-fit: cover;
+    width: 18.4%;
+    height: 45%;
+    margin-left: 61.5%;
+    margin-top: 10.8%;
+}
+
+.conceito h1{
+    font-family: "Krub", sans-serif;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 6vw;
+    margin-top: -10%;
+    margin-left: 36%;
+    margin-bottom: -22%;
+    width: min(50px, 70%);
+}
+
+.texto {
+    margin: 0 auto 2em auto;
+    max-width: 56.26rem;
+    font-size: 1rem;
+}
+.texto p{
+    font-family: "Krub", sans-serif;
+    text-align: justify;
+    font-weight: 300;
+    font-size: 1.5em;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0%;
+    margin-inline-end: 0%;
+    margin-left: 0%;
+    line-height: 1.4;
+    padding: 2%;
+    font-size: clamp(1.5em, 1em + 1vw, 1.5em);
+    margin-top: 13%;
+}
+
+
+#boneca-pl-inicio {
+    width: 8%;
+    display: inline-block;
+    margin-bottom: -30%;
+    padding-bottom: 23%;
+}
+
+.imagem-sobre {
+    display: grid;
+    width: 65%;
+}
+
+#sobre-pyladies-img {
+    object-fit: cover;
+    width: 100%;
+    margin-left: 27%;
+    border-radius: 1rem;
+}
+
+nav#menu {
+    margin-top: 1.1rem;
+}
+
+footer#footer {
+    margin-top: 105%;
+}
+
+@media (min-width: 320px) and (max-width: 414px) {
+    #footer {
+        height: 7rem;
+    }
+}
