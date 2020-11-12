@@ -17,3 +17,13 @@ Mirlla Marques Santana Alves, graduanda em Ciência da computação na Universid
 - E-mail: mirllamsa@gmail.com
 - GitHub: [mirllamarques](https://github.com/mirllamarques)
 - LinkedIn: [Mirlla Marques](https://www.linkedin.com/in/mirlla-marques/)
+
+## Aprendiz:
+Emannuelly Melo, estudante de Ciência da Computação pela Universidade Federal de Campina Grande,  extremamente curiosa sobre desenvolvimento web e sempre disposta a aprender mais tecnologias.
+
+## Contate-me:
+
+- E-mail: emannuelly.melo@ccc.ufcg.edu.br
+- Portfolio: [emannuellymelo.github.io](https://emannuellymelo.github.io/)
+- GitHub: [emannuellymelo](https://github.com/emannuellymelo)
+- Discord:  manumelo#5879
