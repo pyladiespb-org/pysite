@@ -1,23 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <title>PyLadies Paraíba</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyLadiesPB</title>
+    <link rel="stylesheet" href= "../static/css/style.css">
+    <link rel="stylesheet" href= "../static/css/sobre.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'content/images/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'content/images/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'content/images/favicon-16x16.png' %}">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
-
-<div>
-    <h1>PyLadies Paraíba</h1>
-</div>
-
-<div>
-    <h1><a href="{% url 'sobre_detalhe' %}">Sobre</a></h1>
-</div>
-
-<div>
-    <h1><a href="{% url 'eventos_list' %}">Eventos</a></h1>
-</div>
-
-<div>
-    <h1><a href="{% url 'perfis_list' %}">Perfis</a></h1>
-</div>
-
-<div>
-    <h1><a href="{% url 'pyladiesday_eventos' %}">PyLadies Day</a></h1>
-</div>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <div class="menu-container">
+            <nav id="menu">
+                <a href="{% url 'base_view' %}"><img src="{% static 'content/images/logo-mascara-pyladies-pb.png' %}" alt="boneca-pl-inicio" id="boneca-pl-inicio"></a>
+                <input type="checkbox" id="nav" class="hidden">
+                <label for="nav" class="nav-btn">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </label>
+                <div class="nav-wrapper">
+                <ul type="disc">
+                    <li><a href="{% url 'sobre_detalhe' %}">Sobre</a></li>
+                    <li><a href="{% url 'pyladiesday_eventos' %}">PyLadies Day</a></li>
+                    <li><a href="{% url 'eventos_list' %}">Eventos</a></li>
+                    <li><a href="{% url 'perfis_list' %}">Perfis</a></li>
+                    <li><a href="#footer">Contatos</a></li>
+                </ul>
+                </div>
+            </nav>
+            </div>
+            {% block content %}
+            {% endblock %}
+        </header>
+        
+        <footer id="footer">
+            <div class="footer-content">
+                <p>
+                    All content copyright Pyladies Paraíba &copy; 2020 • All rights reserved.
+                </p>
+                <div class="rede-social">
+                    <ul>
+                        <a href="https://www.linkedin.com/company/pyladiespb"><img src="{% static 'content/images/svg/010-linkedin.svg' %}" alt="logo linkedin" id="logo"></a>
+                        <a href="https://github.com/pyladiespb-org"><img src="{% static 'content/images/svg/github-logo.svg' %}" alt="logo github" id="logo"></a>
+                        <a href="https://www.instagram.com/pyladiespb/?hl=pt-br"><img src="{% static 'content/images/svg/011-instagram.svg' %}" alt="logo instagram" id="logo"></a>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
