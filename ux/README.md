@@ -17,3 +17,6 @@ Etapa de criação do site da PyLadies Paraíba com foco na aplicação dos conc
 - E-mail: karolgaliza@gmail.com
 - GitHub: [carolinegaliza](https://github.com/carolinegaliza)
 - LinkedIn: [Mirlla Marques](https://www.linkedin.com/in/caroline-galiza-375351104/)
+
+## Arquivos Visuais da página:
+https://drive.google.com/drive/folders/1UZY81ZzGDPL0_gs0xJoe3hW8cO7t76fG?usp=sharing
