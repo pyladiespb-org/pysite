@@ -1,15 +1,26 @@
+{% extends 'content/base.html' %}
 {% load static %}
 
-<head>
-    <title>PyLadies Paraíba - Sobre</title>
-</head>
-
 {% block content %}
-    <div>
-        <img src="{{ sobre.logo_pb.url }}" style="max-width: 250px;">
-        <h1>Sobre</h1>
-        <img src="{{ sobre.logo_br.url }}" style="max-width: 250px;">
-        <p>{{ sobre.descricao|linebreaksbr }}</p>
-        <img src="{{ sobre.foto.url }}" style="max-width: 700px;">>
+    <div id="definicao">
+        <div class="conceito">
+            <h1>PyLadies</h1>
+        </div>
+        <div class="bonecas-pl">
+            <div class="boneca-pl-pb">
+                <img src= "{{ sobre.logo_pb.url }}" alt="imagem boneca pyLadies Paraíba com máscara" id="bonequinha-pl-pb">
+            </div>
+            <div class="boneca-pl-br">
+                <img src="{{ sobre.logo_br.url }}" alt="imagem boneca pyLadies Brasil" id="bonequinha-pl-br">
+            </div>
+        </div>
+        <div class="texto">
+            <p>{{ sobre.descricao|linebreaksbr }}</p>
+        </div>
+        <div class="imagem-sobre">
+            <div class="img-spec">
+                <img src="{{ sobre.foto.url }}" alt="imagem com as PyLadies" id="sobre-pyladies-img">
+            </div>
+        </div>
     </div>
 {% endblock %}

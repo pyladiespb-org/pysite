@@ -1,23 +1,151 @@
-<head>
-    <title>PyLadies Day</title>
-</head>
+{% extends 'content/base.html' %}
+{% load static %}
 
-<h1>PyLadies Day</h1>
-<h1>Eventos</h1>
-
-{% for evento in eventos %}
-    <div>
-        <h2>{{ evento.nome }}</h2>
-        <p>{{ evento.descricao }}</p>
-        {% for atividade in evento.atividades.all %}
-                <h1>{{ atividade.nome_atividade }}</h1>
-                <p>{{ atividade.tipo_atividade }}</p>
-                <p>{{ atividade.nome_ministrante }}</p>
-                <img src="{{ atividade.foto_ministrante.url }}" style="max-width: 250px;"> 
-                <p>{{ atividade.descricao_atividade }}</p>
-                {% if atividade.link != None %}
-                    <a href="{{ atividade.link }}">{{ atividade.link }}</a>
-                {% endif %}
-        {% endfor %}
+{% block content %}
+    <link rel="stylesheet" href= "../static/css/plday.css">
+    <div id="definicao">
+        <div class="banner">
+            <img src="{% static 'content/images/PyladiesDay.png' %}" alt="banner-pyladiesday" id="banner">
+        </div>
     </div>
-{% endfor %}
+    <div id="especificacao">
+        <div class="infoevento">
+            <p>O PyLadies Day é um evento que procura gerar a interação, a motivação e o aperfeiçoamento entre as integrantes do PyLadies espalhadas pelo estado da Paraíba, através de palestras e minicursos, ministrados por professoras, alunas e pesquisadoras da área.</p> 
+            <p id="segundo-p">Ao longo de um dia inteiro, as integrantes são constantemente instigadas a pensar criticamente sobre o lugar da mulher dentro da TI e sobre os desafios do mercado de trabalho. Além disso, essas participantes aperfeiçoam suas habilidades em novas áreas e, dessa forma, agregam informações preciosas para sua carreira profissional.</p>
+        </div>
+    </div>
+    <section id="corpo">
+        <div class="gallery-container">
+            <div class="gallery__item">
+                <img src="{% static 'content/images/pld_01.png' %}" alt="pyLadies">
+            </div>
+            <div class="gallery__item">
+                <img src="{% static 'content/images/pld_02.png' %}" alt="palestrantes">
+            </div>
+            <div class="gallery__item">
+                <img src="{% static 'content/images/pld_03.png' %}" alt="organizadoras">
+            </div>
+            <div class="gallery__item">
+                <img src="{% static 'content/images/pld_04.png' %}" alt="curso">
+            </div>
+            <div class="gallery__item">
+                <img src="{% static 'content/images/pld_05.png' %}" alt="público">
+            </div>
+        </div>
+    </section>
+
+    <div class="palestrantes">
+        <h1>Palestrantes</h1>
+    </div>
+    <div class="slider-body">
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <div class="slide first">
+                <div class="ext-card">
+                    <div class="card">
+                        <div class="profile-sidebar">
+                            <img class="profile-image" src="imagens/palestrante4.png" alt="Dandara" id="palestrante">
+                        </div>
+                        <div class="profile-main">
+                            <h2 class="profile-name">Dandara Maria</h2>
+                            <p class="profile-position">Cientista de Dados</p>
+                            <p class="profile-body"> PyLadies Paraíba</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="profile-sidebar">
+                            <img class="profile-image" src="imagens/palestrante3.png" alt="Vanessa" id="palestrante">
+                        </div>
+                        <div class="profile-main">
+                            <h2 class="profile-name">Vanessa Dantas</h2>
+                            <p class="profile-position">Professora da UFPB - Campus IV (Rio Tinto)</p>
+                            <p class="profile-body"> Por que as mulheres não gostam de programar?</p>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="slide">
+                <div class="ext-card">
+                    <div class="card">
+                        <div class="profile-sidebar">
+                            <img class="profile-image" src="imagens/palestrante1.png" alt="Ana" id="palestrante">
+                        </div>
+                        <div class="profile-main">
+                            <h2 class="profile-name">Ana Silva</h2>
+                            <p class="profile-position">Engenheira de Software - ênfase em aspectos humanos</p>
+                            <p class="profile-body"> Análise de sentimentos com Python</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="profile-sidebar">
+                            <img class="profile-image" src="imagens/palestrante2.png" alt="Fernanda" id="palestrante">
+                        </div>
+                        <div class="profile-main">
+                            <h2 class="profile-name">Fernanda Vieira</h2>
+                            <p class="profile-position">Analista e desenvolvedora de software</p>
+                            <p class="profile-body"> Python para Web: Django Girls</p>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+            </div>
+        </div>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+        </div>
+    </div>
+    </div>
+    <div class="minicursos">
+        <h1>Minicursos</h1>
+    </div>
+        <div class="slider-body">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn-2" id="radio1-2">
+                    <input type="radio" name="radio-btn-2" id="radio2-2">
+                    <div class="slide first">
+                        <div class="ext-card">
+                            <div class="card">
+                                <div class="profile-sidebar">
+                                    <img class="profile-image" src="imagens/palestrante2.png" alt="Fernanda" id="palestrante">
+                                </div>
+                                <div class="profile-main">
+                                    <h2 class="profile-name">Fernanda Vieira</h2>
+                                    <p class="profile-position">Analista e desenvolvedora de software</p>
+                                    <p class="profile-body">Introdução a Django</p>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="slide">
+                        <div class="ext-card">
+                            <div class="card">
+                                <div class="profile-sidebar">
+                                    <img class="profile-image" src="imagens/palestrante5.png" alt="Elayni" id="palestrante">
+                                </div>
+                                <div class="profile-main">
+                                    <h2 class="profile-name">Elayni Franco</h2>
+                                    <p class="profile-position">Graduanda em Ciência de Dados e Inteligência Artificial pela UFPB</p>
+                                    <p class="profile-body">Introdução a Python</p>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="navigation-auto-2">
+                        <div class="auto-btn1-2"></div>
+                        <div class="auto-btn2-2"></div>
+                    </div>
+                </div>
+                <div class="navigation-manual-2">
+                    <label for="radio1-2" class="manual-btn-2"></label>
+                    <label for="radio2-2" class="manual-btn-2"></label>
+                </div>
+            </div>
+            </div>
+{% endblock %}

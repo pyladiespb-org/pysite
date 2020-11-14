@@ -54,7 +54,6 @@ nav#menu-perfil ul li a{
 nav#menu-perfil ul li a:hover {
     color:#404041;
     transition: .7s;
-    /*FFC905*/
 }
 
 nav#menu-perfil ul li a:after{
@@ -318,6 +317,7 @@ section {
 .fa-facebook:hover,
 .fa-linkedin:hover,
 .fa-github:hover,
+.fa-envelope-square:hover,
 .fa-globe-americas:hover {
     color: #FFC905;
     opacity: .8;
@@ -406,8 +406,42 @@ section {
     opacity: .7;
 }
 
+@media(min-width: 280px) and (max-width: 290px){
+    .container{
+        margin-top: 195%;
+    }
 
-@media(min-width: 280px) and (max-width: 500px){
+    .container h2{
+        line-height: 5;
+    }
+    
+    .formBody h1{
+        width: 100%;
+        position: absolute;
+        margin-top: -140rem;
+        text-align: justify;
+        font-family: "Krub", sans-serif;
+        font-weight: 400;
+        font-size: 3.5rem;
+        color: #404041;
+        padding: 7%;
+    }
+    
+    .formBody a{
+        font-style: italic;
+        width: 100%;
+        text-align: justify;
+        font-family: "Krub", sans-serif;
+        font-weight: 400;
+        font-size: 3rem;
+        color: #404041;
+        padding: 2%;
+    }
+    
+}
+
+
+@media(min-width: 281px) and (max-width: 500px){
     .container{
         margin-top: 150%;
     }
@@ -784,6 +818,7 @@ input[type="submit"]
     font-size: 18px;
     border-radius: 2px;
 }
+
 #footer{
     margin-top: 0;
     height: 12rem;
@@ -939,4 +974,13 @@ input[type="submit"]
     font-weight: 400;
     text-align: justify;
     cursor: pointer;
+}
+
+#enviar-foto {
+    position: absolute;
+    text-align: justify;
+    margin-top: -3rem;
+    margin-left: 1.5%;
+    font-size: 18px;
+    color: #404041;
 }

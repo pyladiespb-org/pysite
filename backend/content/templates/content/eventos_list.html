@@ -1,18 +1,240 @@
-<head>
-    <title>Eventos - Pyladies</title>
-</head>
+{% extends 'content/base.html' %}
+{% load static %}
 
-<h1>Eventos</h1>
+{% block content %}
+    <link rel="stylesheet" href= "../static/css/eventos.css">
+        <div id="definicao">
+            <div class="conceito">
+                <h1>Eventos</h1> 
+            </div>
+            <div class="bonecas-pl">
+                <div class="boneca-pl-pb">
+                    <img src="{% static 'content/images/logo-mascara-pyladies-pb.png' %}" alt="imagem boneca pyLadies Paraíba com máscara" id="bonequinha-pl-pb">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Carrossel-->
+    <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <input type="radio" name="slider" id="slide5">
+        <input type="radio" name="slider" id="slide6">
+        <input type="radio" name="slider" id="slide7">
+        <input type="radio" name="slider" id="slide8">
+        <input type="radio" name="slider" id="slide9">
+        <input type="radio" name="slider" id="slide10">
+        <input type="radio" name="slider" id="slide11">
+        <input type="radio" name="slider" id="slide12">
+        <div id="slides">
+        <div id="overflow">
+            <div class="inner">
+                <div class="slide slide_1">
+                    <div class="slide-content">
+                    {% for evento in eventos %}
+                        <h2>Janeiro</h2>
+                        <div class="events-container" id="archive">
+                        <ul class="grid">
+                            <li data="2020-08-13">
+                                <a href="{{ evento.link }}" target="_blank">
+                                    <div class="month">
+                                        {{ evento.titulo }}
+                                    </div>
+                                    <div class="day">
+                                        {{ evento.data_inicial }}
+                                        {% if evento.data_final != None %}
+                                            {{ evento.data_final }}
+                                        {% endif %}
+                                    </div>
+                                    <div class="year">
+                                        2020
+                                    </div>
+                                    <div class="local">
+                                        {{ evento.local }}
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    {% endfor %}
+                    <div class="slide slide_2">
+                        <div class="slide-content">
+                        <h2>Fevereiro</h2>
+                        <div class="events-container" id="archive">
+                        <ul class="grid">
+                            <li data="2020-08-13">
+                                <a href="https://www.youtube.com/watch?v=KcHBagq9hfo&t=204s" target="_blank">
+                                    <div class="month">
+                                        Conversa entre PyLadies
+                                    </div>
+                                    <div class="day">
+                                        02 / 02
+                                    </div>
+                                    <div class="year">
+                                        2020
+                                    </div>
+                                    <div class="local">
+                                        Youtube
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slide slide_3">
+                        <div class="slide-content">
+                        <h2>Março</h2>
+                        <div class="events-container" id="archive">
+                            <ul class="grid">
+                                <li data="2020-08-13">
+                                    <a href="https://www.youtube.com/watch?v=KcHBagq9hfo&t=204s" target="_blank">
+                                        <div class="month">
+                                            Conversa entre PyLadies
+                                        </div>
+                                        <div class="day">
+                                            03 / 03
+                                        </div>
+                                        <div class="year">
+                                            2020
+                                        </div>
+                                        <div class="local">
+                                            Youtube
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="slide slide_4">
+                        <div class="slide-content">
+                        <h2>Abril</h2>
+                        <div class="events-container" id="archive">
+                            <ul class="grid">
+                                <li data="2020-08-13">
+                                    <a href="https://www.youtube.com/watch?v=KcHBagq9hfo&t=204s" target="_blank">
+                                        <div class="month">
+                                            Conversa entre PyLadies
+                                        </div>
+                                        <div class="day">
+                                            04 / 04
+                                        </div>
+                                        <div class="year">
+                                            2020
+                                        </div>
+                                        <div class="local">
+                                            Youtube
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="slide slide_5">
+                        <div class="slide-content">
+                        <h2>Maio</h2>
+                        <p>Content for Slide 5</p>
+                        </div>
+                    </div>
+                    <div class="slide slide_6">
+                        <div class="slide-content">
+                        <h2>Junho</h2>
+                        <p>Content for Slide 6</p>
+                        </div>
+                    </div>
+                    <div class="slide slide_7">
+                        <div class="slide-content">
+                        <h2>Julho</h2>
+                        <p>Content for Slide 7</p>
+                        </div>
+                    </div>
+                    <div class="slide slide_8">
+                        <div class="slide-content">
+                        <h2>Agosto</h2>
+                        <p>Content for Slide 8</p>
+                        </div>
+                    </div>
+                    <div class="slide slide_9">
+                        <div class="slide-content">
+                        <h2>Setembro</h2>
+                        <p>Content for Slide 9</p>
+                        </div>
+                    </div>
+                    <div class="slide slide_10">
+                        <div class="slide-content">
+                        <h2>Outubro</h2>
+                        <p>Content for Slide 10</p>
+                        </div>
+                    </div>
+                    <div class="slide slide_11">
+                        <div class="slide-content">
+                        <h2>Novembro</h2>
+                        <p>Content for Slide 11</p>
+                        </div>
+                    </div>
 
-{% for evento in eventos %}
-    <div>
-        <h2>{{ evento.titulo }}</h2>
-        <p>Data: {{ evento.data_inicial }}</p>
-        {% if evento.data_final != None %}
-            <p>Data final: {{ evento.data_final }}</p>
-        {% endif %}
-        <p>{{ evento.local }}</p>
-        <p><a href="{{ evento.link }}">{{ evento.link }}</a></p>
-    </div>
-{% endfor %}
+                    <div class="slide slide_12">
+                        <div class="slide-content">
+                        <h2>Dezembro</h2>
+                        <div class="events-container" id="archive">
+                            <ul class="grid">
+                                <li data="2020-08-13">
+                                    <a href="https://www.youtube.com/watch?v=KcHBagq9hfo&t=204s" target="_blank">
+                                        <div class="month">
+                                            Conversa entre PyLadies
+                                        </div>
+                                        <div class="day">
+                                            13 / 08
+                                        </div>
+                                        <div class="year">
+                                            2020
+                                        </div>
+                                        <div class="local">
+                                            Youtube
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        </div>
+        <div id="controls">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+        <label for="slide5"></label>
+        <label for="slide6"></label>
+        <label for="slide7"></label>
+        <label for="slide8"></label>
+        <label for="slide9"></label>
+        <label for="slide10"></label>
+        <label for="slide11"></label>
+        <label for="slide12"></label>
+        </div>
+        <div id="bullets">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+        <label for="slide5"></label>
+        <label for="slide6"></label>
+        <label for="slide7"></label>
+        <label for="slide8"></label>
+        <label for="slide9"></label>
+        <label for="slide10"></label>
+        <label for="slide11"></label>
+        <label for="slide12"></label>
+        </div>
+    </div> 
+
+{% endblock %}
+
+
 
