@@ -511,7 +511,7 @@ section {
     
 }
 
-@media(min-width: 640px) and (max-width: 1020px){
+@media(min-width: 640px) and (max-width: 799px){
     .container{
         margin-top: 70%;
     }
@@ -546,7 +546,78 @@ section {
     
 }
 
-@media(min-width: 1024px) and (max-width: 1350px){
+@media(min-width: 800px) and (max-width: 1020px){
+    .container{
+        margin-top: 40%;
+    }
+
+    .container h2{
+        line-height: 5;
+    }
+    
+    .formBody h1{
+        width: 100%;
+        position: absolute;
+        margin-top: -90rem;
+        text-align: justify;
+        font-family: "Krub", sans-serif;
+        font-weight: 400;
+        font-size: 3.5rem;
+        color: #404041;
+        padding: 7%;
+    
+    }
+    
+    .formBody a{
+        font-style: italic;
+        width: 100%;
+        text-align: justify;
+        font-family: "Krub", sans-serif;
+        font-weight: 400;
+        font-size: 3rem;
+        color: #404041;
+        padding: 2%;
+    }
+    
+}
+
+
+
+@media(min-width: 1024px) and (max-width: 1249px){
+    .container{
+        margin-top: 30%;
+    }
+
+    .container h2{
+        line-height: 5;
+    }
+    
+    .formBody h1{
+        width: 90%;
+        position: absolute;
+        margin-top: -90rem;
+        text-align: justify;
+        font-family: "Krub", sans-serif;
+        font-weight: 400;
+        font-size: 3.5rem;
+        color: #404041;
+        padding: 7%;
+    
+    }
+    
+    .formBody a{
+        font-style: italic;
+        width: 100%;
+        text-align: justify;
+        font-family: "Krub", sans-serif;
+        font-weight: 400;
+        font-size: 3rem;
+        color: #404041;
+        padding: 2%;
+    }
+}
+
+@media(min-width: 1250px) and (max-width: 1350px){
     .container{
         margin-top: 30%;
     }
