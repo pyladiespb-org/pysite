@@ -1,4 +1,5 @@
 from selenium.webdriver import Firefox
+from time import sleep
 
 browser = Firefox()
 url = 'file:///home/balbino/git/pysite/frontend/index.html'
@@ -31,10 +32,23 @@ def clica_links(browser, selector, link):
     link_especifico = seletor.find_element_by_tag_name(link)
     link_especifico.click()
 
-"""
-Exemplo (acesssar o link do github no rodape):
+    sleep(3)
+    browser.back()
 
-clica_links(browser, selector_dicionario['footer'], links_footer['github'])
-"""
+
+def main():
+    clica_links(browser, selector_dicionario['footer'], links_footer['github'])
+    clica_links(browser, selector_dicionario['footer'], links_footer['linkedin'])
+    clica_links(browser, selector_dicionario['footer'], links_footer['instagram'])
+    clica_links(browser, selector_dicionario['header'], links_header['sobre'])
+    clica_links(browser, selector_dicionario['header'], links_header['pyladiesday'])
+    clica_links(browser, selector_dicionario['header'], links_header['eventos'])
+    clica_links(browser, selector_dicionario['header'], links_header['perfis'])
+    clica_links(browser, selector_dicionario['header'], links_header['contatos'])
+
+
+if __name__ == '__main__':
+    main()
+
 
 #browser.quit()
